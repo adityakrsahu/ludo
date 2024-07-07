@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<style type="text/css">
+	.outside{
+		width: 750px;
+		height: 750px;
+		border: 3px solid black;
+		position: fixed;
+/*		margin-top: 150px;*/
+	}
+	.box1{
+		width: 750px;
+		height: 300px;
+		background-color: aqua;
+	}
+	.box2{
+		width: 750px;
+		height: 150px;
+		background-color: darkgreen;
+	}
+	.red{
+		width: 300px;
+		height: 300px;
+		background-color:rgb(204,9,9);
+		float: left;
+	}
+	.yellow{
+		width: 300px;
+		height: 300px;
+		background-color: rgb(218,218,23);
+		float: left;
+	}
+	.green{
+		width: 300px;
+		height: 300px;
+		background-color: rgb(24, 207, 24);
+		float: right;
+	}
+	.blue{
+		width: 300px;
+		height: 300px;
+		background-color: rgb(21, 21, 194);
+		float: left;
+	}
+	.midbox{
+		width: 150px;
+		height: 300px;
+		float: left;
+		background: whitesmoke;
+	}
+	.box{
+		width: 200px;
+		height: 200px;
+		background-color: white;
+		transform: rotate(45deg);
+		margin:42px auto;
+		border-radius: 20px;
+		padding: 5px;
+	}
+	.rb{
+		width: 60px;
+		height: 60px;
+		background-color: red;
+		float: left;
+		margin: 20px;
+		border-radius: 30px;
+	}
+	.bb{
+		width: 60px;
+		height: 60px;
+		background-color: blue;
+		float: left;
+		margin: 20px;
+		border-radius: 30px;
+	}
+	.gb{
+		width: 60px;
+		height: 60px;
+		background-color: green;
+		float: left;
+		margin: 20px;
+		border-radius: 30px;
+	}
+	.yb{
+		width: 60px;
+		height: 60px;
+		background-color: yellow;
+		float: left;
+		margin: 20px;
+		border-radius: 30px;
+	}
+	.row{
+		width: 47px;
+		height: 297px;
+		border: 1px solid;
+		float:left ;
+	}
+	.r1{
+		width: 47px;
+		height: 47px;
+		border: 1px solid;
+/*		border-radius: 5px;*/
+
+	}
+	.mr{
+		width: 46.49px;
+		height: 47px;
+		border: 1px solid;
+
+		float: left;
+
+	}
+	.mid{
+		width: 300px;
+		height: 150px;
+		float: left;
+		background-color: white;
+	}
+	.center{
+		width: 150px;
+		height: 150px;
+		float: left;
+
+	}
+	.midrow{
+		height: 47px;
+		width: 297px;
+		border: 1px solid;
+		float:left ;
+	}
+	.color{
+		border: solid 75px;
+		border-color: green yellow blue red;
+	}
+	.tr{
+		background-color: red;
+	}
+	.tg{
+		background-color: green;
+	}
+
+	.tb{
+		background-color: blue;
+
+	}
+	.ty{
+		background-color: yellow;
+	}
+	.stop{
+		border-radius: 25px;
+	}
+	.user{
+		border: 5px solid rgb(204,9,9);
+		width: 100px;
+	}
+	.user1{
+		border: 5px solid rgb(24, 207, 24) ;
+		width: 97px;
+		margin-left: 649px;
+		margin-top: -109px;
+
+	}
+	.user2{
+		border: 5px solid  rgb(21, 21, 194);
+		width:100px ;
+		margin-left: -3px;
+	}
+	.user3{
+		border: 5px solid  rgb(218,218,23) ;
+		width: 100px;
+		margin-left: 642px;
+		margin-top: -109px;
+
+	}
+</style>
+<body style="margin-left: 105px;">
+	<div>
+		<div class="user">
+			<img src="img/user.png" style="width: 100px; height: 100px;">
+		</div>
+		<div class="user1">
+			<img src="img/user.png" style="width: 98px; height: 95px;">
+		</div>
+	</div>
+	<div class="outside">
+		<div class="box1">
+			<div class="red">
+				<div class="box">
+					<div class="rb"></div>
+					<div class="rb"></div>
+					<div class="rb"></div>
+					<div class="rb"></div>
+				</div>
+			</div>
+			<div class="midbox">
+				<div class="row">
+					<div class="r1"></div>
+					<div class="r1"></div>
+					<div class="r1 tg stop"></div>
+					<div class="r1"></div>
+					<div class="r1"></div>
+					<div class="r1"></div>
+				</div>
+				<div class="row">
+					<div class="r1"></div>
+					<div class="r1 tg"></div>
+					<div class="r1 tg"></div>
+					<div class="r1 tg"></div>
+					<div class="r1 tg "></div>
+					<div class="r1 tg"></div>
+				</div>
+				<div class="row">
+					<div class="r1"></div>
+					<div class="r1 tg"></div>
+					<div class="r1"></div>
+					<div class="r1"></div>
+					<div class="r1"></div>
+					<div class="r1"></div>
+				</div>
+			</div>
+			<div class="green">
+				<div class="box">
+					<div class="gb"></div>
+					<div class="gb"></div>
+					<div class="gb"></div>
+					<div class="gb"></div>
+				</div>
+			</div>
+		</div>
+		<div class="box2">
+			<div class="mid">
+				<div class="midrow">
+					<div class="mr"></div>
+					<div class="mr tr"></div>
+					<div class="mr"></div>
+					<div class="mr"></div>
+					<div class="mr"></div>
+					<div class="mr"></div>
+				</div>
+				<div class="midrow">
+					<div class="mr"></div>
+					<div class="mr tr"></div>
+					<div class="mr tr"></div>
+					<div class="mr tr"></div>
+					<div class="mr tr"></div>
+					<div class="mr tr"></div>
+					
+				</div>
+				<div class="midrow">
+					<div class="mr"></div>
+					<div class="mr "></div>
+					<div class="mr tr stop"></div>
+					<div class="mr"></div>
+					<div class="mr"></div>
+					<div class="mr"></div>
+				</div>
+			</div>
+			<div class="center">
+				<div class="color"></div>
+			</div>
+			<div class="mid">
+				<div class="midrow">
+					<div class="mr"></div>
+					<div class="mr"></div>
+					<div class="mr"></div>
+					<div class="mr ty stop"></div>
+					<div class="mr"></div>
+					<div class="mr"></div>
+				</div>
+				<div class="midrow">
+					<div class="mr ty"></div>
+					<div class="mr ty"></div>
+					<div class="mr ty"></div>
+					<div class="mr ty"></div>
+					<div class="mr ty"></div>
+					<div class="mr"></div>
+				</div>
+				<div class="midrow">
+					<div class="mr"></div>
+					<div class="mr"></div>
+					<div class="mr"></div>
+					<div class="mr "></div>
+					<div class="mr ty"></div>
+					<div class="mr"></div>
+				</div>
+			</div>
+		</div>
+		<div class="box1">
+			<div class="blue">
+				<div class="box">
+					<div class="bb"></div>
+					<div class="bb"></div>
+					<div class="bb"></div>
+					<div class="bb"></div>
+				</div>
+			</div>
+			<div class="midbox">
+				<div class="row">
+					<div class="r1"></div>
+					<div class="r1"></div>
+					<div class="r1"></div>
+					<div class="r1"></div>
+					<div class="r1 tb"></div>
+					<div class="r1"></div>
+				</div>
+				<div class="row">
+					<div class="r1 tb"></div>
+					<div class="r1 tb"></div>
+					<div class="r1 tb"></div>
+					<div class="r1 tb"></div>
+					<div class="r1 tb"></div>
+					<div class="r1"></div>
+				</div>
+				<div class="row">
+					<div class="r1"></div>
+					<div class="r1"></div>
+					<div class="r1"></div>
+					<div class="r1 tb stop"></div>
+					<div class="r1 "></div>
+					<div class="r1"></div>
+				</div>
+			</div>
+			<div class="yellow">
+				<div class="box">
+					<div class="yb"></div>
+					<div class="yb"></div>
+					<div class="yb"></div>
+					<div class="yb"></div>
+				</div>
+			</div>
+		</div>
+		<div>
+		<div class="user2">
+			<img src="img/user.png" style="width: 100px; height: 95px;">
+		</div>
+		<div class="user3">
+			<img src="img/user.png" style="width: 100px; height: 95px;">
+		</div>
+	</div>
+	</div>
+
+
+</body>
+</html>
