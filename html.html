@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-form label {
+    margin-top: 10px;
+}
+
+.checkout-form input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.order-summary {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.order-summary th, .order-summary td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.order-summary th {
+    background-color: #f2f2f2;
+}
+
+button {
+    background-color: #ff6f00;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
+</style>
+<body>
+    <div class="container">
+        <!-- <h1>Checkout</h1> -->
+        <div>
+            <NavLink to='/'>HOME /</NavLink>
+            <NavLink to='/'>CHECKOUT</NavLink>   
+        </div>
+        <form class="checkout-form">
+            <h2>Billing details</h2>
+            <label for="full-name">Full name*</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="street-address">Street address*</label>
+            <input type="text" id="street-address" name="street-address" required>
+
+            <label for="house-number">House number and street name</label>
+            <input type="text" id="house-number" name="house-number">
+
+            <label for="city">Town / City*</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="phone">Phone*</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email address*</label>
+            <input type="email" id="email" name="email" required>
+
+            <h2>Your order</h2>
+            <table class="order-summary">
+                <tr>
+                    <th>Product</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>Plain White Shirt</td>
+                    <td>$150.00</td>
+                </tr>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$150.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$150.00</td>
+                </tr>
+            </table>
+            <p>Cash on delivery. Please contact us if you require assistance or wish to make alternate arrangements.</p>
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+</body>
+</html>
